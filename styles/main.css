@@ -7,6 +7,9 @@
   box-sizing: border-box;
 
   --gray-color: #e4e4e4;
+  --gray-two: #42424210;
+  --black-one: #131313;
+  --orange-color: #e43500;
 }
 
 *,
@@ -17,6 +20,7 @@
 
 body {
   background-color: #eee;
+  font-family: sans-serif;
 }
 
 img {
@@ -63,7 +67,7 @@ button {
 }
 
 .hamburger-logo {
-  color: #e04024;
+  color: var(--orange-color);
 }
 
 .glass-logo,
@@ -111,6 +115,85 @@ button {
   text-decoration: none;
 }
 
+.first-section {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-areas:
+    "premier-articule"
+    "articule-two"
+    "articule-three";
+  grid-gap: 0.5rem;
+}
+
+.first-section h1 {
+  font-size: 0.98rem;
+}
+
+.premier-articule {
+  grid-area: premier-articule;
+  background-image:
+    linear-gradient(to bottom, var(--gray-two), var(--black-one)),
+    url("../assets/images/articule-one.jpg");
+}
+
+.articule-two {
+  grid-area: articule-two;
+  background-image:
+    linear-gradient(to bottom, var(--gray-two), var(--black-one)),
+    url("../assets/images/articule-two.jpg");
+}
+
+.articule-three {
+  grid-area: articule-three;
+  background-image:
+    linear-gradient(to bottom, var(--gray-two), var(--black-one)),
+    url("../assets/images/articule-three.png");
+}
+
+.top-articule {
+  position: relative;
+  min-height: 13.5rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.first-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.articule-content {
+  line-height: 1.4rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.status-font {
+  font-weight: bold;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.bottom-text {
+  margin-top: 0.5rem;
+  color: #aaaaaaef;
+  font-size: 0.8rem;
+}
+
+.logo-articule-one {
+  padding: 1.2rem 1.3rem 10rem;
+  display: none;
+  background:
+    linear-gradient(348deg, #0000 35%, var(--orange-color) 70%),
+    linear-gradient(-12deg, #0000 50%, var(--orange-color) 80%);
+}
+
+.logo-articule-one img {
+  max-width: 24rem;
+}
+
 @media screen and (min-width: 768px) {
   .logo {
     margin: auto;
@@ -143,6 +226,18 @@ button {
   .buttom-links {
     display: block;
   }
+
+  .first-section {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "premier-articule articule-two"
+      "premier-articule articule-three";
+  }
+
+  .premier-articule h1 {
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -155,5 +250,25 @@ button {
 
   .logo {
     display: none;
+  }
+
+  .logo-articule-one {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .top-articule {
+    min-height: 16.5rem;
+  }
+
+  .premier-articule h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .articule-two h1,
+  .articule-three h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
   }
 }
