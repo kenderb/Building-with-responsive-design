@@ -28,6 +28,8 @@ img {
 }
 
 header {
+  top: 0;
+  position: sticky;
   border-bottom: 0.1rem solid var(--gray-color);
   background-color: white;
 }
@@ -183,10 +185,10 @@ button {
 }
 
 .logo-articule-one {
-  padding: 1.2rem 1.3rem 10rem;
+  padding: 1.2rem 1.3rem 15rem;
   display: none;
   background:
-    linear-gradient(348deg, #0000 35%, var(--orange-color) 70%),
+    linear-gradient(348deg, #0000 45%, var(--orange-color) 70%),
     linear-gradient(-12deg, #0000 50%, var(--orange-color) 80%);
 }
 
