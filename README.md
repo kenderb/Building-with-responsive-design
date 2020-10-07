@@ -1,65 +1,43 @@
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# HTML and CSS Smashing Magazine page clone
 
-> One paragraph statement about the project.
+> This is an Smashing Magazine page clone made for an assignment of HTML/CSS.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./pageScreenshot.png)
 
-Additional description about the project and its features.
+We created this project using some images and buttons tags, also we used flex boxes, floats and gird systems for positioning.
+
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML.
+- CSS.
+- VS Code.
+- Git/GitHub.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://kenderb.github.io/smaching-magazinne/)
 
+## How to run it
 
-## Getting Started
+To get a local copy up and running follow these simple steps.
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+* If you're using latest version of git.
 
+* Clone this url https://github.com/kenderb/design-teardown.git on your local host.
 
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+* You have to use a Web explorer browser like Google Chrome or Mozilla Firefox to open the index.html file.
 
 ## Authors
 
-👤 **Author1**
+👤 **KenderB**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
+- GitHub: [@kenderb](https://github.com/kenderb)
+- Twitter: [@KBTarts](https://twitter.com/KBTarts)
+- LinkedIn: [Kender Bolivar](https://www.linkedin.com/in/kender-bolivar-1736086b//)
 
 ## Show your support
 
@@ -67,10 +45,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Apple old plage clone.
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](https://github.com/kenderb/design-teardown/blob/page/LICENSE) licensed.

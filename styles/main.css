@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  box-sizing: border-box;
+
+  --gray-color: #e4e4e4;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  border-bottom: 0.1rem solid var(--gray-color);
+  background-color: white;
+}
+
+button {
+  border: none;
+}
+
+.bottom-links-container button {
+  border-left: 0.1rem solid var(--gray-color);
+}
+
+.flex-box {
+  display: flex;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-areas: "logo hamburger";
+}
+
+.logo {
+  width: 7rem;
+  padding: 0.8rem 1.3rem;
+  filter: contrast(3);
+  background-color: black;
+  grid-area: logo;
+}
+
+.glass {
+  margin-left: auto;
+}
+
+.glass-logo {
+  color: #a3a3a3;
+  transform: scaleX(-1);
+}
+
+.hamburger-logo {
+  color: #e04024;
+}
+
+.glass-logo,
+.hamburger-logo {
+  font-size: 1.5rem;
+  padding: 0.65rem;
+}
+
+.top-links {
+  display: none;
+}
+
+.buttom-links {
+  display: none;
+  grid-area: links;
+}
