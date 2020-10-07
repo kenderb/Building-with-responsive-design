@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 
 img {
@@ -73,10 +73,87 @@ button {
 }
 
 .top-links {
+  padding: 0.1rem 0.8rem;
+  font-size: 0.73rem;
   display: none;
 }
 
+.top-links span {
+  display: inline-block;
+  transform: rotate(90deg);
+  font-size: 0.85rem;
+}
+
+.top-links a {
+  color: var(--gray-color);
+  text-decoration: none;
+}
+
+.top-links li {
+  padding: 0.4rem 0.34rem;
+  display: inline-block;
+}
+
 .buttom-links {
+  font-size: 0.8rem;
   display: none;
+  margin: auto 0.5rem;
   grid-area: links;
+}
+
+.buttom-links li {
+  padding-left: 1rem;
+  display: inline-block;
+}
+
+.buttom-links a {
+  color: #a3a3a3;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin: auto;
+    padding: 27% 1.3rem;
+  }
+
+  .nav-grid {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "logo top-links"
+      "logo hamburger";
+  }
+
+  .top-links {
+    background-color: black;
+    color: var(--gray-color);
+    display: flex;
+    align-items: center;
+    grid-area: top-links;
+  }
+
+  .margin-left {
+    margin-left: auto;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .buttom-links {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "top-links"
+      "hamburger";
+  }
+
+  .logo {
+    display: none;
+  }
 }
