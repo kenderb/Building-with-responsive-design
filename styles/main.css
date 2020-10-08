@@ -45,6 +45,10 @@ button {
   background-color: transparent;
 }
 
+li {
+  list-style-type: none;
+}
+
 .bottom-links-container button {
   border-left: 0.1rem solid var(--gray-color);
 }
@@ -216,9 +220,17 @@ button {
   grid-gap: 1rem;
 }
 
+.orange-color a {
+  color: var(--orange-color);
+}
+
 .section-container h2 a {
   font-weight: bolder;
   color: var(--orange-color);
+}
+
+.section-container h2 {
+  margin: 2rem auto 0.8rem;
 }
 
 .article-latest {
@@ -240,11 +252,11 @@ button {
 }
 
 .article-img-b {
-  background-image: url("https://source.unsplash.com/1630x906");
+  background-image: url("https://source.unsplash.com/1220x903");
 }
 
 .article-img-c {
-  background-image: url("https://source.unsplash.com/1660x903");
+  background-image: url("https://source.unsplash.com/1650x908");
 }
 
 .article-img-d {
@@ -252,7 +264,11 @@ button {
 }
 
 .article-img-e {
-  background-image: url("https://source.unsplash.com/1650x903");
+  background-image: url("https://source.unsplash.com/1620x103");
+}
+
+.article-img-f {
+  background-image: url("https://source.unsplash.com/1690x1053");
 }
 
 .article-latest h4 {
@@ -263,6 +279,10 @@ button {
   font-size: 0.8rem;
   color: #a3a3a3;
   margin-top: 0.5rem;
+}
+
+.funding-list li {
+  margin-bottom: 0.5rem;
 }
 
 /* ------------------------------- Media Querys ------------------------------- */
@@ -324,6 +344,20 @@ button {
   .image-preview {
     min-width: 100%;
     min-height: 9rem;
+  }
+
+  .funding-list li {
+    margin-top: -1rem;
+    display: inline-block;
+  }
+
+  .funding-list li + li ::before {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 1rem;
+    background-color: var(--orange-color);
+    margin: 1rem 0.4rem auto;
   }
 }
 
