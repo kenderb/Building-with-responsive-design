@@ -340,6 +340,20 @@ li {
   margin-right: 0.5rem;
 }
 
+.content-more-articles h3 {
+  font-size: 1.5rem;
+  color: var(--orange-color);
+}
+
+.more-articles-image {
+  min-height: 70vw;
+}
+
+.more-articles-image h1,
+.more-articles-image .status-font {
+  color: white;
+}
+
 /* ------------------------------- Media Querys ------------------------------- */
 
 @media screen and (min-width: 768px) {
