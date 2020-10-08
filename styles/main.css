@@ -1,0 +1,638 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  box-sizing: border-box;
+
+  --gray-color: #e4e4e4;
+  --gray-two: #42424210;
+  --black-one: #131313;
+  --orange-color: #e43500;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #131313;
+  text-decoration: none;
+}
+
+header {
+  z-index: 2;
+  top: 0;
+  position: sticky;
+  border-bottom: 0.1rem solid var(--gray-color);
+  background-color: white;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+li {
+  list-style-type: none;
+}
+
+footer a {
+  color: rgb(185, 185, 185);
+}
+
+.bottom-links-container button {
+  border-left: 0.1rem solid var(--gray-color);
+}
+
+.flex-box {
+  display: flex;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-areas: "logo hamburger";
+}
+
+.logo {
+  width: 7rem;
+  padding: 0.8rem 1.3rem;
+  filter: contrast(3);
+  background-color: black;
+  grid-area: logo;
+}
+
+.glass {
+  margin-left: auto;
+}
+
+.glass-logo {
+  color: #a3a3a3;
+  transform: scaleX(-1);
+}
+
+.glass-logo,
+.hamburger-logo {
+  font-size: 1.5rem;
+  padding: 0.65rem;
+}
+
+.top-links,
+.buttom-links,
+.logo-articule-one,
+.hide-content {
+  display: none;
+}
+
+.top-links {
+  padding: 0.1rem 0.8rem;
+  font-size: 0.73rem;
+}
+
+.top-links span {
+  display: inline-block;
+  transform: rotate(90deg);
+  font-size: 0.85rem;
+}
+
+.top-links a {
+  color: var(--gray-color);
+  text-decoration: none;
+}
+
+.top-links li {
+  padding: 0.4rem 0.34rem;
+  display: inline-block;
+}
+
+.buttom-links {
+  font-size: 0.8rem;
+  margin: auto 0.5rem;
+  grid-area: links;
+}
+
+.buttom-links li {
+  padding-left: 1rem;
+  display: inline-block;
+}
+
+.buttom-links a {
+  color: #a3a3a3;
+  text-decoration: none;
+}
+
+.first-section {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-areas:
+    "premier-articule"
+    "articule-two"
+    "articule-three";
+  grid-gap: 0.5rem;
+}
+
+.first-section h1 {
+  font-size: 0.98rem;
+}
+
+.premier-articule {
+  grid-area: premier-articule;
+  background-image:
+    linear-gradient(to bottom, var(--gray-two), var(--black-one)),
+    url("../assets/images/articule-one.jpg");
+}
+
+.articule-two {
+  grid-area: articule-two;
+  background-image:
+    linear-gradient(to bottom, var(--gray-two), var(--black-one)),
+    url("../assets/images/articule-two.jpg");
+}
+
+.articule-three {
+  grid-area: articule-three;
+  background-image:
+    linear-gradient(to bottom, var(--gray-two), var(--black-one)),
+    url("../assets/images/articule-three.png");
+}
+
+.articule-three-b {
+  background-image:
+    linear-gradient(to bottom, var(--gray-two), var(--black-one)),
+    url("https://source.unsplash.com/1604x905");
+}
+
+.articule-three-c {
+  background-image:
+    linear-gradient(to bottom, var(--gray-two), var(--black-one)),
+    url("https://source.unsplash.com/1608x907");
+}
+
+.articule-three-d {
+  background-image:
+    linear-gradient(to bottom, var(--gray-two), var(--black-one)),
+    url("https://source.unsplash.com/1601x904");
+}
+
+.articule-three-f {
+  background-image:
+    linear-gradient(to bottom, var(--gray-two), var(--black-one)),
+    url("https://source.unsplash.com/1621x910");
+}
+
+.top-articule {
+  position: relative;
+  min-height: 13.5rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.first-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.articule-content {
+  color: white;
+  line-height: 1.4rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.status-font {
+  font-weight: bold;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.bottom-text {
+  margin-top: 0.5rem;
+  color: #aaaaaaef;
+  font-size: 0.8rem;
+}
+
+.logo-articule-one {
+  padding: 1.2rem 1.3rem 28rem;
+  background:
+    linear-gradient(348deg, #0000 45%, var(--orange-color) 70%),
+    linear-gradient(-12deg, #0000 50%, var(--orange-color) 80%);
+}
+
+.logo-articule-one img {
+  max-width: 24rem;
+}
+
+.section-container {
+  margin: auto;
+  padding: 1.3rem;
+  max-width: 1190px;
+}
+
+.latest-news-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+.bottom-list a {
+  color: gray;
+}
+
+.deals-title a,
+.orange-color a,
+.mini-latest-article a,
+.section-container h2 a,
+.deals-title,
+.content-more-articles h3,
+.hamburger-logo {
+  color: var(--orange-color);
+}
+
+.section-container h2 a {
+  font-weight: bolder;
+}
+
+.article-latest {
+  line-height: 1.3rem;
+  align-items: flex-start;
+}
+
+.image-preview {
+  background-image: url("https://source.unsplash.com/1600x900");
+  margin-right: 1rem;
+  background-size: cover;
+  background-position: center;
+  min-width: 5rem;
+  min-height: 5rem;
+}
+
+.article-img-a {
+  background-image: url("https://source.unsplash.com/1650x903");
+}
+
+.article-img-b {
+  background-image: url("https://source.unsplash.com/1220x903");
+}
+
+.article-img-c {
+  background-image: url("https://source.unsplash.com/1650x908");
+}
+
+.article-img-d {
+  background-image: url("https://source.unsplash.com/1650x953");
+}
+
+.article-img-e {
+  background-image: url("https://source.unsplash.com/1620x103");
+}
+
+.article-img-f {
+  background-image: url("https://source.unsplash.com/1690x1053");
+}
+
+.article-latest h4 {
+  font-size: 0.9rem;
+}
+
+.credicts-time {
+  font-size: 0.8rem;
+  color: #a3a3a3;
+  margin-top: 0.5rem;
+}
+
+.foundung-head img {
+  position: absolute;
+  margin: 1rem;
+  max-width: 3.5rem;
+}
+
+.foundung-head h4,
+.foundung-head div {
+  padding: 0.8rem 1rem 0.8rem 5.2rem;
+}
+
+.foundung-head h4 {
+  color: white;
+  background-color: var(--orange-color);
+}
+
+.foundung-head div {
+  line-height: 1.3rem;
+  background-color: #ffe2d9;
+}
+
+.bold-font {
+  font-weight: bolder;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.fouding-content {
+  background-color: #fffaf8;
+}
+
+.fouding-content > p {
+  color: #585858;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+
+.fouding-footer-two {
+  line-height: 2rem;
+  border-bottom: 1px solid var(--orange-color);
+}
+
+.pricetag {
+  color: black;
+  font-size: 1.3rem;
+  transform: scaleX(-1);
+  margin-right: 0.5rem;
+}
+
+.content-more-articles h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.more-articles-image {
+  min-height: 70vw;
+}
+
+.more-articles-image h1,
+.more-articles-image .status-font {
+  color: white;
+}
+
+.more-articles-image h1 {
+  margin-bottom: -0.3rem;
+}
+
+.more-articles-image .status-font {
+  font-weight: lighter;
+}
+
+.mini-latest-article {
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff0eb;
+}
+
+.mini-latest-article p {
+  font-size: 0.8rem;
+  padding: 0.5rem 0.05rem 0.1rem 0.5rem;
+}
+
+.mini-latest-article img {
+  margin-right: auto;
+  width: 6rem;
+  margin-top: 0.1rem;
+  margin-bottom: -0.3rem;
+}
+
+.bottom-list {
+  color: gray;
+  padding-left: 1rem;
+}
+
+.bottom-list li {
+  line-height: 1.2rem;
+  font-size: 0.7rem;
+  padding: 0.5rem 0.1rem;
+  border-bottom: 0.1rem solid #e4e4e4;
+  list-style: disc;
+}
+
+.gird-more-articles {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.1rem;
+}
+
+.deals-title {
+  padding: 4rem 0.1rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deals-title h3 {
+  font-size: 1.3rem;
+}
+
+.original-price {
+  text-decoration: line-through;
+}
+
+.Solcials {
+  padding: 2rem;
+  text-align: center;
+  background-color: #161616;
+}
+
+.Solcials button {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0.5%;
+  background-color: #424242;
+  padding: 0.5rem;
+  border-radius: 30rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.fa-wifi {
+  transform: rotate(45deg);
+}
+
+.Solcials li {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  display: inline;
+  padding: 0.1rem;
+}
+
+.Solcials ul {
+  margin-top: 1.5rem;
+}
+
+.footer-selector {
+  flex-direction: column;
+}
+
+.Legals {
+  line-height: 1.3rem;
+  padding: 2.2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: gray;
+  background-color: black;
+}
+
+.logo-footer {
+  width: 2rem;
+}
+
+.heading-last {
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2rem 0.1rem;
+}
+
+/* ------------------------------- Media Querys ------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin: auto;
+    padding: 27% 1.3rem;
+  }
+
+  .nav-grid {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "logo top-links"
+      "logo hamburger";
+  }
+
+  .top-links {
+    background-color: black;
+    color: var(--gray-color);
+    display: flex;
+    align-items: center;
+    grid-area: top-links;
+  }
+
+  .margin-left {
+    margin-left: auto;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .buttom-links {
+    display: block;
+  }
+
+  .first-section {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "premier-articule articule-two"
+      "premier-articule articule-three";
+  }
+
+  .premier-articule h1 {
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+  }
+
+  .latest-news-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gird-more-articles {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .more-articles-image {
+    min-height: 35vw;
+  }
+
+  .article-latest {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-preview {
+    margin-bottom: 0.8rem;
+    min-width: 100%;
+    min-height: 9rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .funding-list li + li ::before {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 1rem;
+    background-color: var(--orange-color);
+    margin: 1rem 0.4rem auto;
+  }
+
+  .funding-list li {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "top-links"
+      "hamburger";
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-articule-one {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .top-articule {
+    min-height: 16.5rem;
+  }
+
+  .premier-articule h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .articule-two h1,
+  .articule-three h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .gird-more-articles {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .latest-news-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .image-preview {
+    min-height: 12.5rem;
+  }
+
+  .heading-last {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .hide-content {
+    display: block;
+  }
+}
