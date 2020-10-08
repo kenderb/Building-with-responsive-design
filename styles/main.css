@@ -185,6 +185,11 @@ li {
     url("https://source.unsplash.com/1601x904");
 }
 
+.articule-three-f {
+  background-image:
+    linear-gradient(to bottom, var(--gray-two), var(--black-one)),
+    url("https://source.unsplash.com/1621x910");
+}
 
 .top-articule {
   position: relative;
