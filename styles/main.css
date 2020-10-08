@@ -204,6 +204,7 @@ li {
 }
 
 .articule-content {
+  color: white;
   line-height: 1.4rem;
   position: absolute;
   bottom: 0;
