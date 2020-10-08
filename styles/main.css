@@ -78,10 +78,6 @@ li {
   transform: scaleX(-1);
 }
 
-.hamburger-logo {
-  color: var(--orange-color);
-}
-
 .glass-logo,
 .hamburger-logo {
   font-size: 1.5rem;
@@ -252,9 +248,13 @@ li {
   color: gray;
 }
 
+.deals-title a,
 .orange-color a,
 .mini-latest-article a,
-.section-container h2 a {
+.section-container h2 a,
+.deals-title,
+.content-more-articles h3,
+.hamburger-logo {
   color: var(--orange-color);
 }
 
@@ -373,7 +373,6 @@ li {
 .content-more-articles h3 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
-  color: var(--orange-color);
 }
 
 .more-articles-image {
@@ -429,6 +428,20 @@ li {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1.1rem;
+}
+
+.deals-title {
+  padding: 4rem 0.1rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deals-title h3 {
+  font-size: 1.3rem;
+}
+
+.original-price {
+  text-decoration: line-through;
 }
 
 /* ------------------------------- Media Querys ------------------------------- */
