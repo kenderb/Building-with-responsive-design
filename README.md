@@ -1,13 +1,13 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# HTML and CSS Smashing Magazine page clone
+# HTML and CSS TNW web page clone
 
-> This is an Smashing Magazine page clone made for an assignment of HTML/CSS.
+> This is a  TNW web  page clone made for an assignment of HTML/CSS.
 
-![screenshot](./pageScreenshot.png)
+![screenshot](./page-screenshop.png)
 
-We created this project using some images and buttons tags, also we used flex boxes, floats and gird systems for positioning.
+We created this project using some images and buttons tags I used flex boxes, floats, gird systems for positioning and two media query for responsiveness.
 
 
 ## Built With
@@ -19,7 +19,7 @@ We created this project using some images and buttons tags, also we used flex bo
 
 ## Live Demo
 
-[Live Demo Link](https://kenderb.github.io/smaching-magazinne/)
+[Live Demo Link](https://kenderb.github.io/TNW-clone/)
 
 ## How to run it
 
@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple steps.
 
 * If you're using latest version of git.
 
-* Clone this url https://github.com/kenderb/design-teardown.git on your local host.
+* Clone this url https://github.com/kenderb/Building-with-responsive-design.git on your local host.
 
 * You have to use a Web explorer browser like Google Chrome or Mozilla Firefox to open the index.html file.
 
@@ -45,8 +45,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Apple old plage clone.
+- TNW page clone.
 
 ## 📝 License
 
-This project is [MIT](https://github.com/kenderb/design-teardown/blob/page/LICENSE) licensed.
+This project is [MIT](https://github.com/kenderb/Building-with-responsive-design/blob/TNW-clone-page/LICENSE) licensed.
